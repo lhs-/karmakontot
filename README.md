@@ -1,2 +1,2 @@
-# karmakontot-api
+# karmakontot
 main module

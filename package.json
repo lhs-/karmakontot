@@ -1,0 +1,29 @@
+{
+  "name": "karmakontot",
+  "version": "0.0.0",
+  "description": "build powerful applications using lhs.nu manpower and establishment of user-created content in the cloud-based framework of NodeJS and Express",
+  "main": "index.js",
+  "dependencies": {
+    "rethinkdb": "~1.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lhs-/karmakontot"
+  },
+  "keywords": [
+    "karma",
+    "i",
+    "like",
+    "turtles"
+  ],
+  "author": "Axel Smeets, Alexander Cobleigh, Axel Mårtensson",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/lhs-/karmakontot/issues"
+  },
+  "homepage": "https://github.com/lhs-/karmakontot"
+}
