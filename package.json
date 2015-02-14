@@ -4,7 +4,8 @@
   "description": "build powerful applications using lhs.nu manpower and establishment of user-created content in the cloud-based framework of NodeJS and Express",
   "main": "index.js",
   "dependencies": {
-    "rethinkdb": "~1.16.0"
+    "rethinkdb": "~1.16.0",
+    "express": "~4.11.2"
   },
   "devDependencies": {},
   "scripts": {
