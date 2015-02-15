@@ -1,9 +1,10 @@
+// This app demonstrates that you don't need to do the create_module.sh
 var express = require('express')
   , r = require('rethinkdb')
   //
   , app = express()
-  , conn
   , opts
+  , conn
 
 // enable pretty print
 app.set('json spaces', 2)

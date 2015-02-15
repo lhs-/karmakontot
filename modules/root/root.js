@@ -1,21 +1,16 @@
+// This app demonstrates the benefits of create_module.sh
 var express = require('express')
   , r = require('rethinkdb')
-  //
   , app = express()
-  , conn
+  , options = {
+    root: __dirname + '/public/',
+    dotfiles: 'deny'
+  }
   , opts
+  , conn
 
-app.get('/', function(req, res) {
-   var options = {
-     root: __dirname + '/public/',
-     dotfiles: 'deny',
-     headers: {
-       'x-timestamp': Date.now(),
-       'x-sent': true
-     }
-   }
-
-   res.sendFile('index.html', options)
+app.get('/', function (req, res) {
+  res.sendFile('index.html', options)
 })
 
 app.get('/admin', function (req, res) {

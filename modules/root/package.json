@@ -1,4 +1,1 @@
-{ 
-  "name" : "root-app",
-  "main" : "./root.js"
-}
+{ "name" : "unknown", "main" : "root.js" }

@@ -3,7 +3,7 @@ var express = require('express')
   , http = require('http')
   // sub-apps
   , root = require('./modules/root')
-  , setup = require('./modules/setup')
+  , subapp = require('./modules/subapp')
   // main app
   , app = express()
 
@@ -17,11 +17,11 @@ var opts = {
 try { opts = require('./config.json') }
 catch (e) { console.log(e) }
 
-// Mount root sub-app
+// Mount root
 app.use('/', root(opts))
 
-// Mount setup sub-app
-app.use('/', setup(opts))
+// Mount subapp
+app.use('/api', subapp(opts))
 
 http.createServer(app).listen(8080, function () {
   console.log('Listening on port 8080')
