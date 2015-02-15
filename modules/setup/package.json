@@ -1,0 +1,4 @@
+{
+  "name" : "setup-app",
+  "main" : "./setup.js"
+}
